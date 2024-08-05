@@ -1,0 +1,76 @@
+// Smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Responsive navbar toggle
+document.querySelector('.navbar-toggler').addEventListener('click', function() {
+    const navbarCollapse = document.querySelector('#navbarNav');
+    navbarCollapse.classList.toggle('show');
+});
+
+// Form validation
+document.querySelector('form').addEventListener('submit', function(event) {
+    const requiredFields = document.querySelectorAll('[required]');
+    let valid = true;
+
+    requiredFields.forEach(field => {
+        if (!field.value.trim()) {
+            field.classList.add('is-invalid');
+            valid = false;
+        } else {
+            field.classList.remove('is-invalid');
+        }
+    });
+
+    if (!valid) {
+        event.preventDefault();
+    }
+});
+
+// Back to top button
+window.addEventListener('scroll', function() {
+    const backToTopButton = document.querySelector('.back-to-top');
+
+    if (window.pageYOffset > 300) {
+        backToTopButton.classList.add('show');
+    } else {
+        backToTopButton.classList.remove('show');
+    }
+});
+
+document.querySelector('.back-to-top').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Example for carousel or slider
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    const slides = document.querySelectorAll('.mySlides');
+    slides.forEach(slide => slide.style.display = 'none');
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = 'block';
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+
+// Interactive elements like accordion
+document.querySelectorAll('.accordion-button').forEach(button => {
+    button.addEventListener('click', () => {
+        const accordionContent = button.nextElementSibling;
+        button.classList.toggle('active');
+        if (button.classList.contains('active')) {
+            accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+        } else {
+            accordionContent.style.maxHeight = 0;
+        }
+    });
+});
