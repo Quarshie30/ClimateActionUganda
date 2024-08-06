@@ -84,14 +84,38 @@ header h1 {
     color: #333; /* Dark grey text */
 }
 
-.about-content {
-    text-align: left;
-    margin-top: 20px;
+.horizontal-sections {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
 }
 
-.about-content h3 {
+.horizontal-sections h3 {
     color: #004080; /* Dark blue heading */
     font-size: 1.8rem;
+    margin: 0 10px;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.horizontal-sections h3:hover {
+    border-color: #004080; /* Dark blue border on hover */
+}
+
+.section-content {
+    display: none;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.horizontal-sections h3:hover + .section-content {
+    display: block;
+}
+
+.about-content {
     margin-top: 20px;
 }
 
@@ -127,7 +151,7 @@ header h1 {
 }
 
 .background2 {
-    background-image: url('../images/community_led.jpg'); /* Image for Community-led development */
+    background-image: url('../images/communityled.jpg'); /* Image for Community-led development */
 }
 
 .background3 {
