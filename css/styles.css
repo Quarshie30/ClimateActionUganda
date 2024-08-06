@@ -3,44 +3,85 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light grey background for better contrast */
 }
 
 header {
-    background: url('../images/Climate\ Change\ Uganda.jpg') no-repeat center center/cover;
+    position: relative;
+    background: url('../images/Climate Change Uganda2.png') no-repeat center center/cover;
     color: white;
     padding: 20px 0;
     text-align: center;
+    background-size: cover; /* Ensure the image covers the header area */
+    background-position: center; /* Center the image */
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
+    z-index: 1;
+}
+
+header h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 2.5rem;
+    color: #fff;
 }
 
 .navbar {
-    background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+    background-color: #004080; /* Dark blue background */
+}
+
+.navbar-toggler {
+    margin-left: auto; /* Push the toggler to the right on smaller screens */
+}
+
+.navbar-collapse {
+    flex-grow: 0; /* Prevent the collapse from taking up more space than needed */
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row; /* Ensure items are aligned in a row */
+}
+
+.navbar-nav .nav-item {
+    margin-left: 1rem; /* Adjust margin for spacing between items */
 }
 
 .navbar-nav .nav-link {
     color: white !important;
+    font-size: 1rem; /* Increased font size for better readability */
+    font-weight: 400; /* Regular weight */
 }
 
 .navbar-nav .nav-link:hover {
-    color: #FFA500 !important; /* Orange */
+    color: #00BFFF !important; /* Lighter blue for hover */
 }
 
 .main-content {
-    background: url('../images/background.jpg') no-repeat center center/cover;
-    padding: 100px 0;
+    background-color: white; /* Light background for contrast */
+    padding: 50px 0;
     text-align: center;
-    color: white;
-    background-size: cover; /* Ensure image covers the section proportionally */
+    color: #333; /* Dark grey text */
 }
 
 .main-content h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
-    color: white;
+    color: #004080; /* Dark blue heading */
 }
 
 .main-content p {
-    font-size: 1.5rem;
-    color: white;
+    font-size: 1.2rem;
+    color: #333; /* Dark grey text */
 }
 
 .btn-orange {
@@ -53,10 +94,34 @@ header {
 }
 
 footer {
-    background-color: #003366; /* Dark blue */
+    background-color: #004080; /* Dark blue */
     color: white;
     text-align: center;
     padding: 20px 0;
+    font-family: Arial, sans-serif; /* Ensure consistent font family */
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #00BFFF; /* Lighter blue for hover */
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    font-size: 0.875rem; /* Smaller font size */
+    font-weight: 400; /* Regular weight */
+    color: white;
+    font-style: italic; /* Cursive style */
 }
 
 .footer-nav {
@@ -75,22 +140,9 @@ footer {
 .footer-nav a {
     color: white;
     text-decoration: none;
+    font-size: 1rem;
 }
 
 .footer-nav a:hover {
-    color: #FFA500; /* Orange */
-}
-
-.social-icons {
-    margin-bottom: 10px;
-}
-
-.social-icons a {
-    font-size: 24px;
-    color: white;
-    text-decoration: none;
-}
-
-.social-icons a:hover {
-    color: #FFA500; /* Orange */
+    color: #00BFFF; /* Lighter blue */
 }
