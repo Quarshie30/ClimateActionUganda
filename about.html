@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Climate Action Uganda</title>
+    <title>Climate Action Uganda</title>
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -43,26 +43,35 @@
             </div>
         </div>
     </nav>
+    </div>
     <main class="main-content">
-        <div class="container">
+        <div class="container text-center">
             <h2>About Us</h2>
             <p>Information about Climate Action Uganda.</p>
-            <div class="about-content">
-                <div class="horizontal-sections">
-                    <div>
-                        <h3 id="background-toggle">Background</h3>
-                        <p class="hidden" id="background-text">Uganda is highly vulnerable to climate change, with severe impacts on agriculture, water resources, and human health. CAU was established to address these challenges and promote sustainable development through climate action.</p>
-                    </div>
-                    <div>
-                        <h3 id="mission-toggle">Mission</h3>
-                        <p class="hidden" id="mission-text">To empower communities, advocate for climate justice, and support sustainable development in Uganda through innovative climate action initiatives.</p>
-                    </div>
-                    <div>
-                        <h3 id="vision-toggle">Vision</h3>
-                        <p class="hidden" id="vision-text">A climate-resilient Uganda where communities thrive in a healthy, sustainable, and equitable environment.</p>
-                    </div>
+            <div class="horizontal-sections">
+                <div class="section">
+                    <h3 class="toggle-content" data-target="#background-content">Background</h3>
+                    <p id="background-content" class="content">
+                        Uganda is highly vulnerable to climate change, with severe impacts on agriculture, water resources,
+                        and human health. CAU was established to address these challenges and promote sustainable development
+                        through climate action.
+                    </p>
                 </div>
-                
+                <div class="section">
+                    <h3 class="toggle-content" data-target="#mission-content">Mission</h3>
+                    <p id="mission-content" class="content">
+                        To empower communities, advocate for climate justice, and support sustainable development in Uganda
+                        through innovative climate action initiatives.
+                    </p>
+                </div>
+                <div class="section">
+                    <h3 class="toggle-content" data-target="#vision-content">Vision</h3>
+                    <p id="vision-content" class="content">
+                        A climate-resilient Uganda where communities thrive in a healthy, sustainable, and equitable environment.
+                    </p>
+                </div>
+            </div>
+            <div class="about-content">
                 <h3>Principles and Values</h3>
                 <ul>
                     <li class="background1"></li>
@@ -98,28 +107,6 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
-    <script>
-        document.getElementById("background-toggle").addEventListener("mouseover", function() {
-            document.getElementById("background-text").classList.remove("hidden");
-        });
-        document.getElementById("background-toggle").addEventListener("mouseout", function() {
-            document.getElementById("background-text").classList.add("hidden");
-        });
-
-        document.getElementById("mission-toggle").addEventListener("mouseover", function() {
-            document.getElementById("mission-text").classList.remove("hidden");
-        });
-        document.getElementById("mission-toggle").addEventListener("mouseout", function() {
-            document.getElementById("mission-text").classList.add("hidden");
-        });
-
-        document.getElementById("vision-toggle").addEventListener("mouseover", function() {
-            document.getElementById("vision-text").classList.remove("hidden");
-        });
-        document.getElementById("vision-toggle").addEventListener("mouseout", function() {
-            document.getElementById("vision-text").classList.add("hidden");
-        });
-    </script>
 </body>
 
 </html>
