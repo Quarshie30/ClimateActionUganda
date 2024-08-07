@@ -111,6 +111,17 @@ header h1 {
     color: #333; /* Dark grey text */
 }
 
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0; /* Add some margin for spacing */
+}
+
 .horizontal-sections {
     display: flex;
     justify-content: space-around;
@@ -262,4 +273,10 @@ footer p {
 
 .footer-nav a:hover {
     color: #00BFFF; /* Lighter blue */
+}
+
+.activities_main_image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0; /* Add some margin for spacing */
 }
