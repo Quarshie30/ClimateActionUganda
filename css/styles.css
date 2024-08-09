@@ -111,8 +111,62 @@ header h1 {
     color: #333; /* Dark grey text */
 }
 
-.image-container {
-    text-align: center; /* Center the image container */
+.about-content {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.about-content h3 {
+    color: #004080; /* Dark blue heading */
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    color: #333; /* Dark grey text */
+}
+
+.about-content ul {
+    list-style-type: none; /* Remove default list style */
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Center items */
+}
+
+.about-content ul li {
+    margin: 20px 0;
+    font-size: 1.1rem;
+    padding: 20px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    width: 200px; /* Fixed width for square shape */
+    height: 200px; /* Fixed height for square shape */
+}
+
+/* Background image classes for each principle */
+.background1 {
+    background-image: url('../images/climate_justice.jpg'); /* Image for Climate justice and equity */
+}
+
+.background2 {
+    background-image: url('../images/community_led.jpg'); /* Image for Community-led development */
+}
+
+.background3 {
+    background-image: url('../images/sustainable_practices.jpg'); /* Image for Sustainable and inclusive practices */
+}
+
+.background4 {
+    background-image: url('../images/inovation_learning.jpg'); /* Image for Innovation and learning */
+}
+
+.background5 {
+    background-image: url('../images/collaboration_partnerships.jpg'); /* Image for Collaboration and partnerships */
 }
 
 .activities_main_image {
@@ -133,8 +187,8 @@ header h1 {
 
 .btn-orange {
     color: black;
-    border: none;
-    padding: 0px 20px;
+     border: none;
+    padding: 10px 20px;
     text-transform: uppercase;
     font-weight: bold;
 }
