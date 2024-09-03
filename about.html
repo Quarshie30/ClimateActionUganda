@@ -8,12 +8,40 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .about-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .about-content h3 {
+            margin-top: 30px;
+            color: #2C3E50;
+        }
+        .about-content p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #34495E;
+        }
+        .principles-values {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .principles-values img {
+            max-width: 200px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <div class="container">
-            <h1 class="mb-0">Climate Action Uganda</h1>
+            <h1 class="mb-0 text-center">Climate Action Uganda</h1>
         </div>
     </header>
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -31,43 +59,66 @@
                         <a class="nav-link" href="about.html">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="activities.html">Activities</a>
-                    </li>
+                        <a class="nav-link" href="activities.html">Activities</a></li>
                     <li class="nav-item">
-                        <a class="nav-link" href="objectives.html">Objectives</a>
-                    </li>
+                        <a class="nav-link" href="objectives.html">Objectives</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <main class="main-content">
         <div class="container">
-            <h2>About Us</h2>
-            <p>Information about Climate Action Uganda.</p>
+            <h2 class="text-center mt-4">About Us</h2>
+            <p class="text-center">Information about Climate Action Uganda.</p>
             <div class="about-content">
                 <h3>Background</h3>
-                <p>Uganda is highly vulnerable to climate change, with severe impacts on agriculture, water resources, and human health. CAU was established to address these challenges and promote sustainable development through climate action.</p>
-                
+                <p>Uganda is highly vulnerable to climate change, with severe impacts on agriculture, water resources,
+                    and human health. CAU was established to address these challenges and promote sustainable
+                    development through climate action.</p>
+
                 <h3>Mission</h3>
-                <p>To empower communities, advocate for climate justice, and support sustainable development in Uganda through innovative climate action initiatives.</p>
-                
+                <p>To empower communities, advocate for climate justice, and support sustainable development in Uganda
+                    through innovative climate action initiatives.</p>
+
                 <h3>Vision</h3>
-                <p>A climate-resilient Uganda where communities thrive in a healthy, sustainable, and equitable environment.</p>
-                
+                <p>A climate-resilient Uganda where communities thrive in a healthy, sustainable, and equitable
+                    environment.</p>
+
                 <h3>Principles and Values</h3>
-                <ul>
-                    <li class="background1"></li>
-                    <li class="background2"></li>
-                    <li class="background3"></li>
-                    <li class="background4"></li>
-                    <li class="background5"></li>
-                    <li class="background6"></li>
-                    <li class="background7"></li>
-                </ul>
+                <div class="principles-values">
+                    <img src="images/justice-equity.jpg" alt="Climate Justice & Equity" class="background1">
+                    <img src="images/community-development.jpg" alt="Community-Led Development" class="background2">
+                    <img src="images/sustainability-practices.jpg" alt="Sustainable Practices" class="background3">
+                    <img src="images/innovation-learning.jpg" alt="Innovation & Learning" class="background4">
+                    <img src="images/collaboration-partnerships.jpg" alt="Collaboration & Partnerships" class="background5">
+                    <img src="images/inclusive-growth.jpg" alt="Inclusive Growth" class="background6">
+                    <img src="images/environmental-stewardship.jpg" alt="Environmental Stewardship" class="background7">
+                </div>
             </div>
         </div>
     </main>
     <footer>
         <div class="container">
             <div class="social-icons">
-                <a href="https://www.linkedin.com" target="_blank" class="
+                <a href="https://www.linkedin.com" target="_blank" class="text-white mr-3">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="text-white mr-3">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="text-white mr-3">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" class="text-white">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+            <p class="text-center mt-3">© 2024 Climate Action Uganda. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
