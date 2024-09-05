@@ -8,6 +8,18 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .video-section {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .video-container {
+            max-width: 60%;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -40,14 +52,25 @@
         <div class="container text-center">
             <h2>Welcome to Climate Action Uganda</h2>
             <p>Contributing to a more climate-resilient and sustainable future for Uganda.</p>
-            <div class="video-container">
-                <video width="800" controls>
-                    <source src="https://www.un.org/sites/un2.un.org/files/2021/04/climate_hero_2021.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+
+            <!-- Video section centered on the page -->
+            <div class="video-section">
+                <div class="video-container">
+                    <video width="100%" controls>
+                        <source src="https://www.un.org/sites/un2.un.org/files/2021/04/climate_hero_2021.mp4"
+                            type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
-            <a href="https://www.un.org/en/climatechange/what-is-climate-change" class="btn btn-lg btn-orange">Learn More</a>
+
+            <a href="https://www.un.org/en/climatechange/what-is-climate-change" class="btn btn-lg btn-orange">Learn
+                More</a>
         </div>
+
+        <!-- Add temperature visualization here -->
+        <iframe src="https://ourworldindata.org/grapher/monthly-temperature-anomalies?tab=map" loading="lazy"
+            style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
     </main>
     <footer>
         <div class="container">
@@ -55,13 +78,13 @@
                 <a href="https://www.linkedin.com" target="_blank" class="text-white mr-3">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="https://www.twitter.com" target="_blank" class="text-white mr-3">
+                <a href="http://twitter.com/globalgiving" target="_blank" class="text-white mr-3">
                     <i class="fab fa-twitter"></i>
                 </a>
                 <a href="https://www.instagram.com" target="_blank" class="text-white mr-3">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="https://www.facebook.com" target="_blank" class="text-white">
+                <a href="https://www.facebook.com/share_channel/?link=https%3A%2F%2Fplatformfortheneedy.org%2F&app_id=966242223397117&source_surface=external_reshare&display&hashtag" target="_blank" class="text-white">
                     <i class="fab fa-facebook"></i>
                 </a>
             </div>

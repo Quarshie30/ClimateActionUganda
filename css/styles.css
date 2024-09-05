@@ -1,3 +1,4 @@
+/* General body and layout styling */
 body {
     margin: 0;
     padding: 0;
@@ -6,6 +7,7 @@ body {
     background-color: #f4f4f4; /* Light grey background for better contrast */
 }
 
+/* Header styling with background image and overlay */
 header {
     position: relative;
     background: url('../images/Climate Change Uganda2.png') no-repeat center center/cover;
@@ -34,6 +36,7 @@ header h1 {
     color: #fff;
 }
 
+/* Navbar styling */
 .navbar {
     background-color: #004080; /* Dark blue background */
 }
@@ -66,6 +69,7 @@ header h1 {
     color: #00BFFF !important; /* Lighter blue for hover */
 }
 
+/* Sub-navbar styling */
 .sub-navbar {
     background-color: #333; /* Dark grey background */
     padding: 10px 0;
@@ -93,6 +97,7 @@ header h1 {
     color: #00BFFF; /* Lighter blue for hover */
 }
 
+/* Main content and headings styling */
 .main-content {
     background-color: white; /* Light background for contrast */
     padding: 15px 0;
@@ -111,88 +116,56 @@ header h1 {
     color: #333; /* Dark grey text */
 }
 
-.about-content {
-    text-align: left;
-    margin-top: 20px;
-}
-
-.about-content h3 {
-    color: #004080; /* Dark blue heading */
-    font-size: 1.8rem;
-    margin-top: 20px;
-}
-
-.about-content p {
-    font-size: 1.1rem;
-    color: #333; /* Dark grey text */
-}
-
-.about-content ul {
-    list-style-type: none; /* Remove default list style */
-    padding-left: 0;
+/* Styling for section containing content side by side */
+.section-container {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-    gap: 20px; /* Space between items */
-    justify-content: center; /* Center items */
+    flex-wrap: wrap;
+    gap: 20px; /* Space between columns */
+    margin-top: 20px;
 }
 
-.about-content ul li {
-    margin: 20px 0;
-    font-size: 1.1rem;
+.section-column {
+    flex: 1; /* Each column takes equal space */
     padding: 20px;
-    position: relative;
-    background-size: cover;
-    background-position: center;
+    background-color: #f9f9f9; /* Light background color for contrast */
+    border: 1px solid #004080; /* Border for better separation */
     border-radius: 8px;
-    width: 200px; /* Fixed width for square shape */
-    height: 200px; /* Fixed height for square shape */
+    min-width: 300px; /* Minimum width to ensure content doesn't squeeze too much */
 }
 
-/* Background image classes for each principle */
-.background1 {
-    background-image: url('../images/climate_justice.jpg'); /* Image for Climate justice and equity */
+.section-column h4 {
+    color: #004080; /* Dark blue heading */
+    font-size: 1.6rem;
+    margin-bottom: 10px;
 }
 
-.background2 {
-    background-image: url('../images/communityled.jpg'); /* Image for Community-led development */
+.section-column p {
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
-.background3 {
-    background-image: url('../images/sustainable_practices.jpg'); /* Image for Sustainable and inclusive practices */
+.section-column h5 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #004080;
 }
 
-.background4 {
-    background-image: url('../images/inovation_learning.jpg'); /* Image for Innovation and learning */
+.section-column ul {
+    padding-left: 20px;
+    list-style: disc;
 }
 
-.background5 {
-    background-image: url('../images/collaboration_partnerships.jpg'); /* Image for Collaboration and partnerships */
+.section-column ul li a {
+    color: #004080;
+    text-decoration: none;
 }
 
-.activities_main_image {
-    max-width: 100%;
-    height: auto;
-    margin: 20px 0; /* Add some margin for spacing */
+.section-column ul li a:hover {
+    text-decoration: underline;
 }
 
-.section-content {
-    display: none;
-    text-align: left;
-    margin-top: 10px;
-    border: 1px solid #004080; /* Border around the paragraph */
-    padding: 15px;
-    border-radius: 5px;
-    background-color: #f9f9f9; /* Light background for the paragraph */
-}
-
-.btn-orange {
-    color: black;
-    border: none;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
+/* Footer styling */
 footer {
     background-color: #004080; /* Dark blue */
     color: white;
