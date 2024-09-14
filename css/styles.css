@@ -267,3 +267,69 @@ footer p {
 .section-content ul li a:hover {
     text-decoration: underline;
 }
+
+
+/* Sticky Sidebar */
+.sticky-sidebar {
+    position: fixed;
+    top: 100px;
+    left: 20px;
+    width: 200px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.sticky-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sticky-sidebar li {
+    margin-bottom: 10px;
+}
+
+.sticky-sidebar a {
+    text-decoration: none;
+    color: #004080;
+}
+
+.sticky-sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* Accordion Styles */
+.accordion-section {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.accordion-button {
+    width: 100%;
+    text-align: left;
+    background: #004080;
+    color: white;
+    padding: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    background: #f9f9f9;
+}
+
+.accordion-content p {
+    margin-bottom: 10px;
+}
