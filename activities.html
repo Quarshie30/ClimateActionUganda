@@ -278,39 +278,88 @@
 
                 <hr> <!-- Divider between sections -->
 
-                <p><strong>3. Sustainable Urban Development</strong></p>
+<!-- Sustainable Urban Development in Africa Section -->
+<div class="flex-item">
+    <p><strong>3. Sustainable Urban Development</strong></p>
 
-                <p><strong>Research:</strong></p>
-                <ul>
-                    <li><strong>Climate-Resilient Infrastructure:</strong> Researchers are developing materials and
-                        building designs that can withstand extreme weather events. Innovations include permeable
-                        pavements to reduce urban flooding and cool roofs that reflect more sunlight to reduce urban
-                        heat islands.</li>
-                    <li><strong>Sustainable Transportation:</strong> The development of electric vehicle (EV)
-                        infrastructure is gaining momentum, with research into affordable EVs suited for African
-                        markets. Additionally, mass transit systems, such as bus rapid transit (BRT), are being enhanced
-                        with smart technology to improve efficiency and reduce emissions.</li>
-                    <li><strong>Green Buildings:</strong> Research in green building technologies includes the use of
-                        locally-sourced sustainable materials and the integration of passive solar heating and cooling
-                        systems. The concept of net-zero energy buildings, which produce as much energy as they consume,
-                        is also being explored.</li>
-                </ul>
+    <p><strong>Research:</strong></p>
+    <ul>
+        <li><strong>Climate-Resilient Infrastructure:</strong> Researchers are developing materials and
+            building designs that can withstand extreme weather events. Innovations include permeable
+            pavements to reduce urban flooding and cool roofs that reflect more sunlight to reduce urban
+            heat islands.</li>
+        <li><strong>Sustainable Transportation:</strong> The development of electric vehicle (EV)
+            infrastructure is gaining momentum, with research into affordable EVs suited for African
+            markets. Additionally, mass transit systems, such as bus rapid transit (BRT), are being enhanced
+            with smart technology to improve efficiency and reduce emissions.</li>
+        <li><strong>Green Buildings:</strong> Research in green building technologies includes the use of
+            locally-sourced sustainable materials and the integration of passive solar heating and cooling
+            systems. The concept of net-zero energy buildings, which produce as much energy as they consume,
+            is also being explored.</li>
+    </ul>
 
-                <p><strong>Policy:</strong> Urban policies promote smart city planning, waste management, and the
-                    reduction of urban heat islands. The African Union’s African Urban Agenda emphasizes the importance
-                    of these strategies in creating sustainable and resilient cities.</p>
+    <p><strong>Policy:</strong> Urban policies promote smart city planning, waste management, and the
+        reduction of urban heat islands. The African Union’s African Urban Agenda emphasizes the importance
+        of these strategies in creating sustainable and resilient cities.</p>
 
-                <h4>References:</h4>
-                <ul>
-                    <li><a href="https://unhabitat.org" target="_blank">UN-Habitat - Urban Development</a></li>
-                    <li><a href="https://au.int/en/agenda2063/urban-agenda" target="_blank">African Urban Agenda</a>
-                    </li>
-                    <li><a href="https://www.youtube.com/watch?v=some_example_link" target="_blank">Video: "Sustainable
-                            Urban Development in Africa"</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=some_example_link" target="_blank">Video: "Green
-                            Buildings and Climate Resilience"</a></li>
-                </ul>
+    <h4>References:</h4>
+    <ul>
+        <li><a href="https://unhabitat.org" target="_blank">UN-Habitat - Urban Development</a></li>
+        <li><a href="https://au.int/en/agenda2063/urban-agenda" target="_blank">African Urban Agenda</a></li>
+    </ul>
 
+    <!-- Two Videos Side by Side -->
+    <div class="video-side-by-side">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/QbxW44ClUr4" title="Sustainable Urban Development in Africa" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/qVVwjHqWCl8" title="Urban Development in Climate Resilience" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<!-- CSS for Responsive Video Embed and Side by Side Layout -->
+<style>
+    .video-side-by-side {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .video-container {
+        flex: 1;
+        min-width: 300px;
+        max-width: 48%;
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
+        background: #f8f9fa;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+
+    @media (max-width: 768px) {
+        .video-side-by-side {
+            flex-direction: column;
+        }
+        .video-container {
+            max-width: 100%;
+        }
+    }
+</style>
                 <hr> <!-- Divider between sections -->
 
                 <p><strong>Conclusion</strong></p>
