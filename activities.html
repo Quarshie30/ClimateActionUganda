@@ -976,7 +976,7 @@
                 gap: 20px;
                 margin-bottom: 20px;
             }
-
+        
             .flex-item {
                 flex: 1;
                 min-width: 300px;
@@ -984,58 +984,28 @@
                 padding: 15px;
                 border-radius: 5px;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            }
-
-            .section-intro {
                 margin-bottom: 20px;
             }
-
-            .section-content {
-                margin-bottom: 40px;
+        
+            .video-container {
+                position: relative;
+                padding-bottom: 56.25%; /* 16:9 aspect ratio */
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                background: #000;
+                border-radius: 8px;
+                margin-top: 10px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
             }
-
-            .main-heading {
-                font-size: 24px;
-                font-weight: bold;
-                margin-bottom: 20px;
-                margin-top: 20px;
-            }
-
-            .sub-heading {
-                font-size: 20px;
-                font-weight: bold;
-                margin-top: 20px;
-                margin-bottom: 10px;
-            }
-
-            .sub-sub-heading {
-                font-size: 18px;
-                font-weight: bold;
-                margin-top: 15px;
-                margin-bottom: 10px;
-            }
-
-            .impact-text {
-                margin-bottom: 20px;
-                font-size: 16px;
-                line-height: 1.5;
-            }
-
-            a {
-                color: #007bff;
-                text-decoration: none;
-            }
-
-            a:hover {
-                text-decoration: underline;
-            }
-
-            p {
-                margin: 0 0 10px;
-            }
-
-            strong {
-                font-weight: 600;
+        
+            .video-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: 0;
             }
         </style>
 
@@ -1051,16 +1021,46 @@
             <div class="flex-container">
                 <div class="flex-item">
                     <h4 class="sub-heading">1. Renewable Energy Initiatives in Uganda</h4>
+                    <style>
+                        /* Video Container Styles */
+                        .video-container {
+                            position: relative;
+                            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+                            height: 0;
+                            overflow: hidden;
+                            max-width: 100%;
+                            background: #000;
+                            border-radius: 8px;
+                            margin-top: 10px;
+                            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+                        }
+                    
+                        .video-container iframe {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            border: 0;
+                        }
+                    </style>
+                    
                     <h5 class="sub-sub-heading">1.1. Uganda Energy Credit Capitalisation Company (UECCC)</h5>
-                    <p><strong>Overview:</strong> The UECCC was established to facilitate investments in renewable
-                        energy by providing credit enhancement and financial solutions for renewable energy projects in
-                        Uganda.</p>
-                    <p><strong>Key Activities:</strong> Offering credit guarantees, refinancing facilities, and capacity
-                        building for local financial institutions to support renewable energy investments.</p>
-                    <p><strong>Impact:</strong> Increased access to affordable finance for renewable energy projects,
-                        expansion of off-grid solar energy in rural areas, and enhanced energy security.</p>
-                    <p><strong>References:</strong> <a href="https://www.ueccc.or.ug" target="_blank">UECCC Official
-                            Website</a></p>
+                    <p><strong>Overview:</strong> The UECCC was established to facilitate investments in renewable energy by providing
+                        credit enhancement and financial solutions for renewable energy projects in Uganda.</p>
+                    <p><strong>Key Activities:</strong> Offering credit guarantees, refinancing facilities, and capacity building for local
+                        financial institutions to support renewable energy investments.</p>
+                    <p><strong>Impact:</strong> Increased access to affordable finance for renewable energy projects, expansion of off-grid
+                        solar energy in rural areas, and enhanced energy security.</p>
+                    <p><strong>References:</strong> <a href="https://www.ueccc.or.ug" target="_blank">UECCC Official Website</a></p>
+                    
+                    <!-- YouTube Video Embed -->
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/vLIVMtjpfos" 
+                            title="Uganda Energy Credit Capitalisation Company (UECCC)" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>
+                    </div>
 
                     <h5 class="sub-sub-heading">1.2. GET FiT Uganda</h5>
                     <p><strong>Overview:</strong> The GET FiT Uganda program fast-tracks small renewable energy projects
@@ -1073,18 +1073,89 @@
                             Uganda</a></p>
                 </div>
 
+                <style>
+                    /* Video Container Styles */
+                    .video-container {
+                        position: relative;
+                        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+                        height: 0;
+                        overflow: hidden;
+                        max-width: 100%;
+                        background: #000;
+                        border-radius: 8px;
+                        margin-top: 10px;
+                        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+                    }
+                
+                    .video-container iframe {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border: 0;
+                    }
+                
+                    /* Additional Section Styles */
+                    .flex-container {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 20px;
+                        margin-bottom: 20px;
+                    }
+                
+                    .flex-item {
+                        flex: 1;
+                        min-width: 300px;
+                        background-color: #f8f9fa;
+                        padding: 15px;
+                        border-radius: 5px;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                        margin-bottom: 20px;
+                    }
+                
+                    .sub-sub-heading {
+                        font-size: 18px;
+                        font-weight: bold;
+                        margin-top: 15px;
+                        margin-bottom: 10px;
+                    }
+                
+                    a {
+                        color: #007bff;
+                        text-decoration: none;
+                    }
+                
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                
+                    p {
+                        margin: 0 0 10px;
+                    }
+                
+                    strong {
+                        font-weight: 600;
+                    }
+                </style>
+                
                 <div class="flex-item">
                     <h5 class="sub-sub-heading">1.3. Solar Home Systems (SHS)</h5>
-                    <p><strong>Overview:</strong> Solar Home Systems are being promoted across Uganda to provide
-                        off-grid electricity solutions for rural households, including solar panels, batteries, and
-                        appliances.</p>
-                    <p><strong>Key Activities:</strong> Distribution of SHS through micro-financing models,
-                        pay-as-you-go systems, and partnerships with private sector companies.</p>
-                    <p><strong>Impact:</strong> Increased access to clean and affordable electricity in rural areas,
-                        improved quality of life, and reduction in reliance on kerosene and other polluting energy
-                        sources.</p>
-                    <p><strong>References:</strong> <a href="https://www.undp.org/uganda" target="_blank">UNDP Uganda -
-                            Solar Home Systems</a></p>
+                    <p><strong>Overview:</strong> Solar Home Systems are being promoted across Uganda to provide off-grid electricity
+                        solutions for rural households, including solar panels, batteries, and appliances.</p>
+                    <p><strong>Key Activities:</strong> Distribution of SHS through micro-financing models, pay-as-you-go systems, and
+                        partnerships with private sector companies.</p>
+                    <p><strong>Impact:</strong> Increased access to clean and affordable electricity in rural areas, improved quality of
+                        life, and reduction in reliance on kerosene and other polluting energy sources.</p>
+                    <p><strong>References:</strong> <a href="https://www.undp.org/uganda" target="_blank">UNDP Uganda - Solar Home
+                            Systems</a></p>
+                
+                    <!-- YouTube Video Embed -->
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/C_SmD1p7NbY" title="Solar Home Systems (SHS) in Uganda"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
                 </div>
 
                 <div class="flex-item">
